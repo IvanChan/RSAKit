@@ -13,8 +13,8 @@
 		9EDB98721DCD84CC00254BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB98701DCD84CC00254BBD /* Main.storyboard */; };
 		9EDB98741DCD84CC00254BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB98731DCD84CC00254BBD /* Assets.xcassets */; };
 		9EDB98771DCD84CC00254BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB98751DCD84CC00254BBD /* LaunchScreen.storyboard */; };
-		9EDB98801DCD861F00254BBD /* RSAKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB987F1DCD861F00254BBD /* RSAKit.m */; };
 		9EDB98841DCD86FF00254BBD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDB98831DCD86FF00254BBD /* Security.framework */; };
+		9EDB98D51DCDABE400254BBD /* RSAKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB98D41DCDABE400254BBD /* RSAKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,9 @@
 		9EDB98731DCD84CC00254BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EDB98761DCD84CC00254BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EDB98781DCD84CC00254BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EDB987E1DCD861F00254BBD /* RSAKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAKit.h; sourceTree = "<group>"; };
-		9EDB987F1DCD861F00254BBD /* RSAKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAKit.m; sourceTree = "<group>"; };
 		9EDB98831DCD86FF00254BBD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9EDB98D31DCDABE400254BBD /* RSAKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAKit.h; sourceTree = "<group>"; };
+		9EDB98D41DCDABE400254BBD /* RSAKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +65,11 @@
 		9EDB98661DCD84CC00254BBD /* RSAExercise */ = {
 			isa = PBXGroup;
 			children = (
+				9EDB98D21DCDABE400254BBD /* RSAKit */,
 				9EDB986A1DCD84CC00254BBD /* AppDelegate.h */,
 				9EDB986B1DCD84CC00254BBD /* AppDelegate.m */,
 				9EDB986D1DCD84CC00254BBD /* ViewController.h */,
 				9EDB986E1DCD84CC00254BBD /* ViewController.m */,
-				9EDB987E1DCD861F00254BBD /* RSAKit.h */,
-				9EDB987F1DCD861F00254BBD /* RSAKit.m */,
 				9EDB98701DCD84CC00254BBD /* Main.storyboard */,
 				9EDB98731DCD84CC00254BBD /* Assets.xcassets */,
 				9EDB98751DCD84CC00254BBD /* LaunchScreen.storyboard */,
@@ -95,6 +94,15 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		9EDB98D21DCDABE400254BBD /* RSAKit */ = {
+			isa = PBXGroup;
+			children = (
+				9EDB98D31DCDABE400254BBD /* RSAKit.h */,
+				9EDB98D41DCDABE400254BBD /* RSAKit.m */,
+			);
+			path = RSAKit;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -168,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EDB986F1DCD84CC00254BBD /* ViewController.m in Sources */,
-				9EDB98801DCD861F00254BBD /* RSAKit.m in Sources */,
+				9EDB98D51DCDABE400254BBD /* RSAKit.m in Sources */,
 				9EDB986C1DCD84CC00254BBD /* AppDelegate.m in Sources */,
 				9EDB98691DCD84CC00254BBD /* main.m in Sources */,
 			);
@@ -327,6 +335,7 @@
 				9EDB987D1DCD84CC00254BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
