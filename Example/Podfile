@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RSAKit_Example' do
+  pod 'RSAKit', :path => '../'
+
+  target 'RSAKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

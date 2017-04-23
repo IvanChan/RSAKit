@@ -1,2 +1,4 @@
-
-RSAExercise.xcodeproj/project.xcworkspace/xcuserdata/
+xcuserdata
+Build
+DerivedData
+Example/Pods
